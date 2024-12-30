@@ -13,12 +13,12 @@ This repository contains all the data, functions, scripts to run simulations and
 - openxlsx
 
 ### Instructions
-- Environment Requirements
+#### Environment Requirements
 Make sure you have the R environment and corresponding packages installed on your computer. The package and downstream analysis and simulations depend on several packages, including `MASS`, `dplyr`, etc. You can install the necessary packages using the following command:
 ```R
 install.packages("MASS")
 ```
-- Steps for Execution  
+#### Steps for Execution  
 Open R or RStudio and load the corresponding script file. You can run the script with the following command:
 ```R
 source("localSGD_LinR.R")
@@ -40,13 +40,9 @@ Contains the core code on both the generated and real datasets, including LocalS
 The results can be reproduced by running in the command window or Rstudio.For example:
 ```R
 Rscript FedBFGS_LinR.R
-```
-```R
 Rscript Local_LinR.R
 ```
 The above two files implement the Broyden–Fletcher–Goldfarb–Shanno (BFGS) algorithm and the local SGD algorithm, using a linear model.
-
-
 
 #### Contributions -  
 Contributions of any kind are welcome, including issue reports, feature requests, and code contributions.
@@ -54,4 +50,3 @@ Contributions of any kind are welcome, including issue reports, feature requests
 #### License
 This project uses the MIT license, please refer to the LICENSE file for details.
 
-For any further queries and difficulties that you face on executing any code, feel free to post it under the issue tab above and we will get back to you as soon as possible.
