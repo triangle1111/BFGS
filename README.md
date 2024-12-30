@@ -15,6 +15,22 @@ The R project for Online Statistical Inference in Federated Learning with Differ
 - Environment Requirements
 Make sure you have the R environment and corresponding packages installed on your computer. You can install the necessary packages using the following command:
 install.packages("MASS")
+在编辑 README 文件中的安装部分时，可以按照以下结构进行组织，以确保清晰明了：
+
+```markdown
+## Installation
+
+This package can be installed through `devtools` in R:
+
+```R
+library(devtools)
+devtools::install_github("linnylin10/covarianceSelection", subdir = "covarianceSelection")
+```
+
+The package and downstream analysis and simulations depend on several packages, some of which originate from BioConductor. These include `DBI`, `dbplyr`, `dplyr`, `foreach`, `glmnet`, `hash`, `huge`, `igraph`, `MASS`, `Matrix`, and `org.Hs.eg.db`.
+
+**Warning:** The `doMC` package does not work well on Windows, as it does not seem to actually parallelize the code. For more details, refer to the following link: [Stack Overflow](https://stackoverflow.com/questions/16453625/package-domc-not-available-for-r-version-3-0-0-warning-in-installation).
+```
 
 - Steps for Execution  
 Open R or RStudio and load the corresponding script file. You can run the script with the following command:
