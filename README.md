@@ -13,29 +13,24 @@ The R project for Online Statistical Inference in Federated Learning with Differ
 
 ### Instructions
 - Environment Requirements
-Make sure you have the R environment and corresponding packages installed on your computer. You can install the necessary packages using the following command:
-install.packages("MASS")
-在编辑 README 文件中的安装部分时，可以按照以下结构进行组织，以确保清晰明了：
-
-```markdown
-## Installation
-
-This package can be installed through `devtools` in R:
-
+Make sure you have the R environment and corresponding packages installed on your computer. The package and downstream analysis and simulations depend on several packages, including `MASS`, `dplyr`, etc. You can install the necessary packages using the following command:
 ```R
-library(devtools)
-devtools::install_github("linnylin10/covarianceSelection", subdir = "covarianceSelection")
+install.packages("MASS")
 ```
-
-The package and downstream analysis and simulations depend on several packages, some of which originate from BioConductor. These include `DBI`, `dbplyr`, `dplyr`, `foreach`, `glmnet`, `hash`, `huge`, `igraph`, `MASS`, `Matrix`, and `org.Hs.eg.db`.
-
-**Warning:** The `doMC` package does not work well on Windows, as it does not seem to actually parallelize the code. For more details, refer to the following link: [Stack Overflow](https://stackoverflow.com/questions/16453625/package-domc-not-available-for-r-version-3-0-0-warning-in-installation).
-```
-
 - Steps for Execution  
 Open R or RStudio and load the corresponding script file. You can run the script with the following command:
+```R
 source("localSGD_LinR.R")
+```
+### Data
+The two type datasets used in this article.The first one is payment_fraud_dataset(downloaded from [Kaggle](https://www.kaggle.com/)), using a  logistic regression to detect online payments fraud. The second one is generating dataset,using logistic regression and Linear model.
 
+## Project Structure
+project/
+├── exp1-exp4/ 
+├── other_metrics/ 
+├──  real_dataset/
+└── README.md
 
 ### File List
 For easier understanding, the above code is modularized:  
