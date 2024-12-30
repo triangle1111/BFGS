@@ -1,6 +1,7 @@
 # Broyden–Fletcher–Goldfarb–Shanno (BFGS) algorithm
 
-The R project for Online Statistical Inference in Federated Learning with Differential Privacy.This project contains multiple R script files that implement different algorithms for the paper, including LocalSGD, FedSGD, CSL and BFGS algorithms. Each script file implements the core logic of the corresponding algorithm and provides examples of related functions.
+### Purpose
+This repository contains all the data, functions, scripts to run simulations and analysis, and scripts to generate plots for the paper "Online Statistical Inference in Federated Learning with Differential Privacy".
 
 ### Pre-requisites 
 1. Installation of R (Version 4.4.2) 
@@ -25,7 +26,7 @@ source("localSGD_LinR.R")
 ### Data
 The two type datasets used in this article.The first one is payment_fraud_dataset(downloaded from [Kaggle](https://www.kaggle.com/)), using a  logistic regression to detect online payments fraud. The second one is generating dataset,using logistic regression and Linear model.
 
-## Project Structure
+### Project Structure
 project/
 ├── exp1-exp4/ 
 ├── other_metrics/ 
