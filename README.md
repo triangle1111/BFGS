@@ -27,23 +27,25 @@ source("localSGD_LinR.R")
 The two type datasets used in this article.The first one is payment_fraud_dataset(downloaded from [Kaggle](https://www.kaggle.com/)), using a  logistic regression to detect online payments fraud. The second one is generating dataset,using logistic regression and Linear model.
 
 ### Project Structure
+```
 project/
 ├── exp1-exp4/ 
 ├── other_metrics/ 
-├──  real_dataset/
+├── real_dataset/
 └── README.md
+```
+Contains the core code on both the generated and real datasets, including LocalSGD, FedSGD, CSL and BFGS algorithms. Each script file implements the core logic of the corresponding algorithm and provides examples of related functions.
 
-### File List
-For easier understanding, the above code is modularized:  
-- LocalSGD_Lin.R  
-- FedSGD_Lin.R 
-- FedCSL_Lin.R 
-- FedBFGS_Lin.R   
-- LocalSGD_LogR.R  
-- FedSGD_LogR.R 
-- FedCSL_LogR.R 
-- FedBFGS_LogR.R     
-Implemented a local stochastic gradient descent algorithm, FedSGD algorithm, CSL and BFGS algorithm for training linear models and Logistic regression model, using both generated and real datasets.
+### Reproducing the results
+The results can be reproduced by running in the command window or Rstudio.For example:
+```R
+Rscript FedBFGS_LinR.R
+```
+```R
+Rscript Local_LinR.R
+```
+The above two files implement the Broyden–Fletcher–Goldfarb–Shanno (BFGS) algorithm and the local SGD algorithm, using a linear model.
+
 
 
 #### Contributions -  
