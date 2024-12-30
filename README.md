@@ -46,9 +46,9 @@ Rscript Local_LogR.R
 ```
 The above two files implement the Broyden–Fletcher–Goldfarb–Shanno (BFGS) algorithm and the local SGD algorithm, using a linear model and logistic regression.
 
-#### Contributions -  
+### Contributions -  
 Contributions of any kind are welcome, including issue reports, feature requests, and code contributions.
 
-#### License
+### License
 This project uses the MIT license, please refer to the LICENSE file for details.
 
