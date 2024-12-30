@@ -12,7 +12,7 @@ This repository contains all the data, functions, scripts to run simulations and
 - dplyr
 - openxlsx
 
-### Instructions
+### Installation
 #### Environment Requirements
 Make sure you have the R environment and corresponding packages installed on your computer. The package and downstream analysis and simulations depend on several packages, including `MASS`, `dplyr`, etc. You can install the necessary packages using the following command:
 ```R
@@ -41,8 +41,10 @@ The results can be reproduced by running in the command window or Rstudio.For ex
 ```R
 Rscript FedBFGS_LinR.R
 Rscript Local_LinR.R
+Rscript FedBFGS_LogR.R
+Rscript Local_LogR.R
 ```
-The above two files implement the Broyden–Fletcher–Goldfarb–Shanno (BFGS) algorithm and the local SGD algorithm, using a linear model.
+The above two files implement the Broyden–Fletcher–Goldfarb–Shanno (BFGS) algorithm and the local SGD algorithm, using a linear model and logistic regression.
 
 #### Contributions -  
 Contributions of any kind are welcome, including issue reports, feature requests, and code contributions.
